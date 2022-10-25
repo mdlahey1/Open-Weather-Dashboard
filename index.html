@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <!-- FontAwesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- CSS -->
@@ -14,51 +12,52 @@
         <title>Weather Dashboard</title>
     </head>
 
-    <body class="">
-        <!-- Jumbotron Header -->
-        <header class="">
-            <h1>Weather Dashboard</h1>
-        </header>
+    <!-- Main Header -->
+    <header class="main-header">
+        <h1>Weather Dashboard</h1>
+    </header>
 
+    <body class="flex-column min-100-vh">
         <!-- Main Body -->
-        <main class="">
+        <main class="flex-row justify-space-between">
             <!-- Container for Search Form and Current Conditions Container -->
-            <section class="">
+            <section class="flex-row justify-space-between col-12">
                 <!-- Search Form Card -->
-                <section class="">
-                    <section class="">
-                        <form class="" id="">
-                            <label class="" for="">City Name</label>
-                            <input name="" class="" id="" type="" autofocus="true"/>
-                            <button type="" class="btn">Get Weather</button>
+                <section class="col-12 col-md-4">
+                    <section class="card">
+                        <h3 class="card-header text-uppercase">Search By City</h3>
+                        <form class="card-body" id="city-form">
+                            <label class="form-label" for="cityname">City Name</label>
+                            <input class="form-input" name="cityname" class="" id="cityname" type="text" autofocus="true"/>
+                            <button type="submit" class="btn">Get Weather</button>
                         </form>
                     </section>
                 </section>
 
                 <!-- Current Conditions Card -->
-                <section class="">
-                    <section class="" id="">
-                        <h2 class="" id=""></h2>
-                        <section class="" id=""></section>
+                <section class="col-12 col-md-8">
+                    <section class="card hidden" id="current-weather-card">
+                        <h2 class="card-header" id="weather-status"></h2>
+                        <section class="card-body" id="currenter-weather"></section>
                     </section>
                 </section>
             </section>
 
             <!-- Search History and 5-day Forecast Container -->
-            <section class="">
+            <section class="flex-row justify-space-between col-12">
                 <!-- Search History Container -->
-                <section class="" id="">
-                    <section class="" id="" style="display:none;">
-                        <h3 class="">Search History <i class="" id="" title=""></i></h3>
-                        <section class="" id=""></section>
+                <section class="col-12 col-md4" id="search">
+                    <section class="card" id="history" style="display:none;">
+                        <h3 class="card-header text-uppercase">Search History <i class="trash" id="trash" title="Clear History"></i></h3>
+                        <section class="card-body" id="history-buttons"></section>
                     </section>
                 </section>
 
                 <!-- 5 Day Forecast Container -->
-                <section class="">
-                    <section class="" id="">
-                        <h2 class="" id="">5-Day Forecast</h2>
-                        <section class="" id=""></section>
+                <section class="col-12 col-md-8">
+                    <section class="card hidden" id="five-day-card">
+                        <h2 class="card-header" id="five-day-head">5-Day Forecast</h2>
+                        <section class="card-body flex-row justify-space-around" id="five-day-body"></section>
                     </section>
                 </section>
 
