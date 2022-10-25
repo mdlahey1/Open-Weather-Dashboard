@@ -1,4 +1,4 @@
-/* Color/Radius Variables */
+/* Repeated Color/Radius Variables */
 :root {
     --primary: #ffffff;
     --secondary: #aeebfc;
@@ -12,14 +12,13 @@
     box-sizing: border-box;
  }
 
- /* Header Background/Alignment */
+ /* Main Header Styling */
 .main-header {
     background-image: linear-gradient(to right, var(--light-dark), var(--dark));
     padding: 3%;
     text-align: center;
 }
 
-/* Header Text Color */
 .main-header h1 {
     color: var(--primary);
 }
@@ -44,7 +43,7 @@ h3 {
     color: var(--dark);
     line-height: 1.25;
 }
-  
+
 main {
     margin: 20px auto;
     width: 94%;
@@ -59,7 +58,7 @@ p {
     font-size: .9rem;
 }
 
-/* CARDS */
+/* Card Styling */
 .card {
     margin: 0 0 20px 0;
     border: 3px solid var(--dark);
@@ -92,7 +91,7 @@ p {
     font-size: 16px;
 }
 
-/* FORM */
+/* Form Styling */
 .form-label,
 .form-input,
 .form-textarea {
@@ -112,7 +111,8 @@ p {
     border: 2px solid var(--light-dark);
     border-radius: var(--border-radius);
 }
-  
+
+/* Button Styling */
 .btn {
     font-size: 1.3rem;
     text-decoration:none;
@@ -210,7 +210,7 @@ p {
     color: rgb(29, 153, 255);
 }
   
-  /* HEIGHT / WIDTH UTILS */
+  /* Height/Width Styling */
 .min-100-vh {
     min-height: 100vh;
 }
@@ -219,13 +219,13 @@ p {
     min-width: 100vw;
 }
   
-/* FONT UTILS */
+/* Font Styling */
 .text-uppercase {
     text-transform: uppercase;
 }
   
   
-/* FLEX CONTENT */
+/* Flex Styling */
 .flex-row {
     display: flex;
     flex-wrap: wrap;
