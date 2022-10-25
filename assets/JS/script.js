@@ -1,8 +1,3 @@
-//API Variables
-var weatherApiRootURL = "https://api.openweathermap.org";
-var weatherApiKey = "114cbc8355fa237b4bef43c392e276d6";
-
-//Element Variables
 var cityForm = document.querySelector("#cityForm");
 var citySearchInput = document.querySelector("#citySearchInput");
 var searchHistory = document.querySelector("#searchHistory");
