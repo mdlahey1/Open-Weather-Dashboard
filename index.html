@@ -26,9 +26,9 @@
                 <section class="col-12 col-md-4">
                     <section class="card">
                         <h3 class="card-header text-uppercase">Search By City</h3>
-                        <form class="card-body" id="city-form">
-                            <label class="form-label" for="cityname">City Name</label>
-                            <input class="form-input" name="cityname" class="" id="cityname" type="text" autofocus="true"/>
+                        <form class="card-body" id="cityForm">
+                            <label class="form-label" for="citySearchInput">City Name</label>
+                            <input class="form-input" name="citySearchInput" class="" id="citySearchInput" type="text" autofocus="true"/>
                             <button type="submit" class="btn">Get Weather</button>
                         </form>
                     </section>
@@ -36,9 +36,9 @@
 
                 <!-- Current Conditions Card -->
                 <section class="col-12 col-md-8">
-                    <section class="card hidden" id="current-weather-card">
-                        <h2 class="card-header" id="weather-status"></h2>
-                        <section class="card-body" id="currenter-weather"></section>
+                    <section class="card hidden" id="currentWeatherCard">
+                        <h2 class="card-header" id="weatherStatus"></h2>
+                        <section class="card-body" id="currentWeather"></section>
                     </section>
                 </section>
             </section>
@@ -46,18 +46,18 @@
             <!-- Search History and 5-day Forecast Container -->
             <section class="flex-row justify-space-between col-12">
                 <!-- Search History Container -->
-                <section class="col-12 col-md4" id="search">
-                    <section class="card" id="history" style="display:none;">
-                        <h3 class="card-header text-uppercase">Search History <i class="trash" id="trash" title="Clear History"></i></h3>
-                        <section class="card-body" id="history-buttons"></section>
+                <section class="col-12 col-md4" id="searchHistory">
+                    <section class="card" id="historyCard" style="display:none;">
+                        <h3 class="card-header text-uppercase">Search History <i class="fas fa-trash" id="trashBtn" title="Clear History"></i></h3>
+                        <section class="card-body" id="historyBtns"></section>
                     </section>
                 </section>
 
                 <!-- 5 Day Forecast Container -->
                 <section class="col-12 col-md-8">
-                    <section class="card hidden" id="five-day-card">
-                        <h2 class="card-header" id="five-day-head">5-Day Forecast</h2>
-                        <section class="card-body flex-row justify-space-around" id="five-day-body"></section>
+                    <section class="card hidden" id="fiveDayCard">
+                        <h2 class="card-header" id="fiveDayHead">5-Day Forecast</h2>
+                        <section class="card-body flex-row justify-space-around" id="fiveDayBody"></section>
                     </section>
                 </section>
 

@@ -198,7 +198,7 @@ p {
     border-radius: var(--border-radius);
 }
   
-#weather-status img{
+#weatherStatus img{
     margin: -35px 0;
 }
   
